@@ -16,7 +16,7 @@ public class WebConfig {
             @Override
             public void addCorsMappings(CorsRegistry registry) {
                 registry.addMapping("/**")
-                        .allowedOrigins("https://zing-backend-mq02.onrender.com")
+                        .allowedOrigins("https://zing-frontend-phi.vercel.app/")
                         .allowedMethods("*")
                         .allowedHeaders("*");
             }

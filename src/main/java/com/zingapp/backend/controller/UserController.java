@@ -14,7 +14,7 @@ import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
 
-@CrossOrigin(origins = "https://zing-backend-mq02.onrender.com/")
+@CrossOrigin(origins = "https://zing-frontend-phi.vercel.app/")
 @RestController
 @RequestMapping("/api/users")
 public class UserController {
