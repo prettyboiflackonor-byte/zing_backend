@@ -17,7 +17,7 @@ public class ExceptionAdvice {
     @ExceptionHandler(MaxUploadSizeExceededException.class)
     public void handleMaxSizeException(MaxUploadSizeExceededException exc, HttpServletResponse response) throws IOException {
         response.setStatus(HttpStatus.PAYLOAD_TOO_LARGE.value());
-        response.setHeader("Access-Control-Allow-Origin", "https://zing-frontend-phi.vercel.app/");
+        response.setHeader("Access-Control-Allow-Origin", "https://zing-frontend-phi.vercel.app");
         response.setContentType("application/json");
         response.getWriter().write("{\"message\":\"Image is too large.\"}");
     }
